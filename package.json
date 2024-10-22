@@ -4,7 +4,8 @@
   "description": "### Team of Developers * [Nadine Pesso](https://github.com/nadinejuraschek) * [Morgan McMilin](https://github.com/Morganatic) * [Caitlin Phillips](https://github.com/Caitlin3410) * [Loralee Smith](https://github.com/LoraleeSmith)",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "npm install"
   },
   "repository": {
     "type": "git",
