@@ -1,0 +1,78 @@
+<%- include('partials/header') -%>
+
+<%- include('partials/navbar') -%>
+
+<div class="ui masthead segment">
+    <div class="jumbotron">
+      <!-- MAIN CONTENT -->
+      <div class="header-container">
+        <div class="weather">
+          <img id='weather-icon'>
+          <p id='temp'></p>
+        </div>
+        <h1 class="ui header welcome">Welcome <%= currentUser %>! <br>
+          How are you feeling today?</h1>
+        <h2 id="quote"></h2>
+        <hr class="short" />
+        <h4 id="author"></h4>
+      </div>
+      <a href="/newentry" id="add-entry-btn">
+        Add Entry
+      </a>
+      <div class="arrow">
+        <i class="angle down icon"></i>
+      </div>
+    </div>
+  </div>
+
+<div class="ui container hotlines">
+    <h3 class="hotlines-title">Mental Health Hotlines</h3>
+    <table id="hotlines-table" class="ui selectable celled table">
+      <thead class="hotlines-header">
+        <tr>
+          <td>Hotline</td>
+          <td>Number</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> KIRAN (Government of India Mental Health Helpline)</td>
+          <td>1800-599-0019</td>
+        </tr>
+        <tr>
+          <td>iCALL (Tata Institute of Social Sciences)</td>
+          <td>+91-52987821</td>
+        </tr>
+        <tr>
+          <td>Fortis Stress Helpline</td>
+          <td>+91-8376804102</td>
+        </tr>
+        <tr>
+          <td>National Institute of Mental Health and Neurosciences (NIMHANS)</td>
+          <td>080-4611 0007 </td>
+        </tr>
+        <tr>
+          <td>Vandrevala Foundation</td>
+          <td>+91-9999 666 555</td>
+        </tr>
+        <tr>
+          <td>COOJ Mental Health Foundation</td>
+          <td>+91-83-22252525</td>
+        </tr>
+        <tr>
+          <td>Saath Suicide Prevention Centre</td>
+          <td>+91-79-2630 5544 / +91-79-2630 0222</td>
+        </tr>
+        <tr>
+          <td>Lifeline Foundation</td>
+          <td>033-40447437 / 033-24861957</td>
+        </tr>
+        <tr>
+          <td>Tele-MANAS (Mental Health Assistance and Networking Across States)</td>
+          <td>14416 / 1800-891-4416</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+<%- include('partials/footer') -%>

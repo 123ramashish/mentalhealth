@@ -1,0 +1,34 @@
+<%- include('partials/header') -%>
+
+<%- include('partials/navbar') -%>
+
+<main class="overview-containter">
+  <div class="date-controller">
+    <div id="prev-month">
+      <i class="angle left icon"></i>
+    </div>
+    <div class="display-date"></div>
+    <div id="next-month">
+      <i class="angle right icon"></i>
+    </div>
+  </div>
+    <div class="table-div">
+      <table id="tracker-table">
+        <thead id="category">
+          <tr>
+            <td class="tracker-table-header-date">Date</td>
+            <td>Comments</td>
+          </tr>
+        </thead>
+        <tbody class="tracker-table-body">
+        </tbody>
+      </table>
+    </div>
+
+    <section class="graph-container">
+      <h3 class="graph-year year"></h3>
+      <div class="graph"></div>
+    </section>
+  </main>
+
+<%- include('partials/footer') -%>
